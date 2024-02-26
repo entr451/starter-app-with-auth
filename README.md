@@ -31,3 +31,10 @@ Then:
 - Modify `application.rb` to disable `belongs_to` validation and to disable strong parameters (yes, mass-assignment is bad but learning is hard)
 - Add `public/stylesheets/application.css`
 - ~~DO NOT ignore development.sqlite3~~ back to ignoring it... because template repos are created on top of template repos, this gets hairy
+
+### Getting Started
+
+1. Copy from template
+2. Open copied repository in Gitpod (or IDE of choice)
+3. Make any desired changes to `db/migrate/*_create_users.rb` migration file
+4. Run `rails db:setup` to create database and add users table
