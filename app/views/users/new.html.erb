@@ -1,19 +1,20 @@
 <h1>New User Account</h1>
 
-<%= form_with :model => @user do |form| %>
+<form action="/users" method="post">
   <p>
-    <%= form.label "username" %>
-    <%= form.text_field "username" %>
+    <label for="username_input">Username</label>
+    <input type="text" name="username" id="username_input">
   </p>
+
   <p>
-    <%= form.label "real_name" %>
-    <%= form.text_field "real_name" %>
+    <label for="real_name_input">Real Name</label>
+    <input type="text" name="real_name" id="real_name_input">
   </p>
+
   <p>
-    <%= form.label "password" %>
-    <%= form.password_field "password" %>
+    <label for="password_input">Password</label>
+    <input type="password" name="password" id="password_input">
   </p>
-  <p>
-    <%= form.submit "Sign up" %>
-  </p>
-<% end %>
+
+  <button>Signup</button>
+</form>

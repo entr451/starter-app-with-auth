@@ -1,13 +1,13 @@
 <h1>Login</h1>
 
-<%= form_with :url => "/sessions" do |form| %>
+<form action="/sessions" method="post">
   <p>
-    <%= form.label "username" %>
-    <%= form.text_field "username" %>
-    <%= form.label "password" %>
-    <%= form.password_field "password" %>
+    <label for="username_input">Username</label>
+    <input type="text" name="username" id="username_input">
+
+    <label for="password_input">Password</label>
+    <input type="password" name="password" id="password_input">
   </p>
-  <p>
-    <%= form.submit "Login" %>
-  </p>
-<% end %>
+
+  <button>Login</button>
+</form>
