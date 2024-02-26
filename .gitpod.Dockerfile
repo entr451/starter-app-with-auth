@@ -1,2 +1,3 @@
-FROM gitpod/workspace-full:2023-01-16-03-31-28
+# You can find the new timestamped tags here: https://hub.docker.com/r/gitpod/workspace-full/tags
+FROM gitpod/workspace-full:2024-01-24-09-19-42
 USER gitpod
