@@ -16,7 +16,7 @@
       <% if @user == nil %>
         <a href="/users/new">Sign Up</a> | <a href="/login">Login</a>
       <% else %>
-        <%= @user["first_name"] %> | <a href="/logout">Logout</a>
+        <%= @user["real_name"] %> | <a href="/logout">Logout</a>
       <% end %>
     </p>
 
