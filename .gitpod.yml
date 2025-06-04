@@ -1,7 +1,16 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: bundle install
+  - name: Install Rails
+    init: bundle install
+  - name: Install Claude Code
+    init: npm install -g @anthropic-ai/claude-code
+  - name: Install ChatGPT Codex
+    init: npm install -g @openai/codex
+  - name: Update node
+    init: |
+      nvm install 22
+      node -v # Should print "v22.*.*".
 vscode:
   extensions:
     - vortizhe.simple-ruby-erb
